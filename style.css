@@ -17,7 +17,7 @@
     /* font  */
     --font-h1:70px;
     --font-h2:56px;
-    --font-h3:48px;
+    --font-h3:46px;
     --font-h4:27px;
     --font-h5:24px;
     --p-font:18px;
@@ -44,9 +44,9 @@ img{
     
       
 }
-section{
-    
-}
+ section{
+    padding: 3% ;
+ }
 html{
     scroll-behavior: smooth;
     width: 100%;
@@ -157,25 +157,33 @@ header .btn{
     transition: 0.3s;
 }
 header .btn:hover{
-    background-color: #ffffffbb;
+    background-color: #e6923e;
     border: 1px solid #00000031;
     color: #000;
 }
 .btn i{
     margin-left: 5px;
+    transition: 0.3s;
 }
 .btn i:hover{
     margin-left: 20px;
-    color: #d99655;
+    color: #fff;
+    transform: rotate(360deg);
 }
 header .image{
     margin: 30px 0 5px;
 }
 header .image img{
-    width: 250px;
+    max-width:250px;
     height: auto;
     padding: 0 12px;
+    transition: 0.4s;
    
+
+}
+header .image img:hover{
+    transform: scale(1.02);
+    
 
 }
 header .image img:nth-child(even){
@@ -187,5 +195,150 @@ header .image img:nth-child(odd){
     object-fit: cover;
 
 }
+/* -----------------------------------  */
+
+.hero, .arrive{
+    padding: 8% 12%;
+    
+}
+.hero h2, .arrive h2{
+    font-size: var(--font-h2);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    color: var(--color-black);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+}
+.hero p , .arrive p{
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: var(---p-text-color);
+    margin-bottom: 45px;
+    
+
+}
+hr{
+    border: 1px solid #4b484821;
+    width: 80%;
+    margin: 0 auto;
+}
+.hero .hero-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.hero-container .hero-card{
+    width: 100%;
+    height: auto;
+      
+}
+.hero-card .hero-image{
+    width: 100%;
+    height: auto;
+    position: relative;  
+    
+}
+.hero-image img{
+    width: 100%;
+    height: 80%;
+   
+}
+.hero-card h3{
+        font-size: var(--font-h3);
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 500;
+        color: var(--color-black);
+        position: absolute;
+        margin-top: -20%;
+        margin-left: 8%;    
+}
+/* -----------------------------------------  */
+.arrive .arrive-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+
+    max-width: 1020px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-padding: 30px;
+}
+
+.arrive-container::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #86636388;
+}
+.arrive-container::-webkit-scrollbar{
+	height: 5px;
+	background-color: #F5F5F5;
+}
+
+.arrive-container::-webkit-scrollbar-thumb{
+	background-color:var(---btn-color); 
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(---primary-color); 
+}
+
+
+
+
+.arrive-container .arrive-card{
+    width: 280px;
+    height: auto; 
+    padding:0 10px;
+    background-color: #e9dede85;
+    border-radius: 10px;
+
+    scroll-snap-align: start;
+}
+.arrive-card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.arrive-card h6{
+    font-size: 16px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+
+}
+.arrive-card .arrive-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+.arrive-details .arrive-content h4{
+    font-size: var(--font-20);
+    color: var(--color-black);
+    margin-bottom: 5px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+.arrive-details .arrive-content h5{
+    font-size: var(--font-16);
+    color: var(--color-black);
+    font-weight: 600;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+.arrive-details a{
+    color: var(--color-black);
+    opacity: 0.9;
+}
+.arrive-details .arrive-content h4:hover, 
+.arrive-details .arrive-content h5:hover, 
+.arrive-details a:hover{
+    opacity: 1;
+    color: #000;
+
+}
+
 
 
