@@ -62,7 +62,7 @@ body{
 /* -------------------------------------------------  */
 header{
     width: 100%;
-    height: 140vh;
+    height: 152vh;
     background-color:var(---body-color);
     text-align: center;
     align-items: center;
@@ -84,7 +84,7 @@ header .head{
     height: auto;
     border-radius: 5px 5px 0 0;
 }
-.navbar .logo{
+.navbar .logo, .footer-head .logo{
     color: var(--color-black);
     text-transform: uppercase;
     font-family: "Bebas Neue", sans-serif;
@@ -143,7 +143,9 @@ header h1{
 header a{
     display: inline-block;
 }
-header .btn{
+header .btn , 
+.offer-right .btn, 
+.delivery .btn{
     margin: 5% 0;
     padding: 15px 30px;
     text-transform: uppercase;
@@ -156,7 +158,9 @@ header .btn{
     border-radius: 5px;
     transition: 0.3s;
 }
-header .btn:hover{
+header .btn:hover,
+.offer-right .btn:hover, 
+.delivery .btn:hover{
     background-color: #e6923e;
     border: 1px solid #00000031;
     color: #000;
@@ -197,11 +201,17 @@ header .image img:nth-child(odd){
 }
 /* -----------------------------------  */
 
-.hero, .arrive{
+.hero, 
+.arrive, 
+.offer, 
+.trademark,
+.delivery,
+.instagram{
     padding: 8% 12%;
     
 }
-.hero h2, .arrive h2{
+
+.hero h2, .arrive h2, .insta-head h2{
     font-size: var(--font-h2);
     font-family: "Bebas Neue", sans-serif;
     font-weight: 500;
@@ -258,11 +268,13 @@ hr{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 30px;
-
+    padding: 10px ;
+    box-shadow: rgba(100, 100, 111, 0.137) 0px 7px 29px 0px;
     max-width: 1020px;
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
     scroll-padding: 30px;
+    background-color:#edcc8b48 ;
 }
 
 .arrive-container::-webkit-scrollbar-track{
@@ -299,6 +311,10 @@ hr{
     height: auto;
     object-fit: cover;
     border-radius: 15px;
+    transition: 0.3s;
+}
+.arrive-card img:hover{
+    transform: scale(1.02);
 }
 .arrive-card h6{
     font-size: 16px;
@@ -339,6 +355,401 @@ hr{
     color: #000;
 
 }
+/* ------------------------------------------------  */
+#offer{
+    background-color:var(--color-black);
+    max-width: 100%;
+    height: 125vh;
+    margin: 0 auto;
+    color: #fff;
+}
+.offer .offer-details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.offer-details .offer-left{
+    width: 50%;
+    margin-left: -20%;
+}
+.offer-left .date{
+    margin-bottom: 30px;
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: var(---body-color);
+}
+.offer-left h2{
+    font-size: var(--font-h2);
+    color: var(---body-color);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.offer-left h4{
+    font-size: var(--font-h4);
+    font-weight: 400;
+    
+}
+.offer-left h4::before{
+    content: "Get chose your best items";
+    color: var(---primary-color);
+    animation: text 25s infinite;
+}
+@keyframes text{
+    0%{
+        
+        opacity: 1;
+    }
+    20%{
+        
+        opacity: 0;
+    }
+    50%{
+        
+        opacity: 1;
+        content: "SUNDAY SPECIAL - Get 50% off ";
+       
+    }
+    60%{
+        
+        opacity: 1;
+        
+    }
+    80%{
+        
+        opacity: 0;
+       
+        
+    }
+    90%{
+        
+        opacity: 0;
+        
+    }
+    100%{
+        
+        opacity: 1;
+        content: " Get 20% off on every products";
+       
+        
+    }
 
 
+    
+}
+.offer-left p{
+    color:var(---body-color);
+    opacity: 0.8;
+    font-size: var(--font-16);
+    font-weight: 400;
+    width: 380px;
+    margin-top: 15px;
+}
+.offer-left .ptext::before{
+    content: "Spend minimal $100 get 30% off voucher code for your next purchase";
+    color: var(--others-color);
+    animation: ptext 16s infinite;
 
+}
+@keyframes ptext{
+    0%{
+        
+        opacity: 1;
+    }
+    20%{
+        
+        opacity: 0;
+    }
+    50%{
+        
+        opacity: 1;
+        content: "Spend minimal $200 get 35% off voucher code for your next purchase";
+       
+    }
+    60%{
+        
+        opacity: 1;
+        
+    }
+    80%{
+        
+        opacity: 0;
+       
+        
+    }
+    90%{
+        
+        opacity: 1;
+        content: "Spend minimal $300 get 40% off voucher code for your next purchase";
+        
+    }
+    100%{
+        
+        opacity: 0;
+        
+       
+        
+    }
+
+
+    
+}
+.bannar-img{
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+    
+}
+.image-container{
+    margin-bottom: 20px;
+    animation: scroll-left 20s linear infinite;
+}
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* -----  */
+
+/* --------  */
+
+.image-container img{
+    max-width:350px ;
+    height:250px ;
+    object-fit: cover;
+    margin: 10px 20px;
+}
+.image-container img:nth-child(even){
+    height: 380px; 
+}
+/* --------------------------------  */
+.trademark-contentainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    
+}
+.trademark-contentainer .trademark-left h2{
+    font-size: var(--font-h2);
+    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    color: var(--color-black);
+    
+
+}
+.trademark-contentainer .trademark-left p{
+    font-size: var(--p-font);
+    color: var(---p-text-color);
+    margin-top: 20px;
+    font-weight: 400;
+}
+.trademark-contentainer .trademark-right a{
+    color: var(--color-black);
+    margin: 0 5px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.trademark-contentainer .trademark-right a:hover{
+    transform: rotate(360deg);
+}
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 15px;
+    margin: 0 auto;
+   
+}
+.logo-container img{
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 40px;
+    margin: auto;
+
+    padding: 15px 30px;
+    background-color: var(---body-color);
+}
+.logo-container img:hover{
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.24) 0px 7px 29px 0px;
+}
+/* ---------------------------------------------------  */
+#delivery{
+    background-color:var(---body-color);
+    max-width: 100%;
+    height: 157vh;
+    margin: 0 auto;
+   
+}
+.delivery{
+    text-align: left;
+    margin-top: -40px;
+}
+.delivery h2{
+    font-size: var(--font-h2);
+    color: var(--color-black);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.delivery p{
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: var(---p-text-color);
+    margin-bottom: 20px;
+    width: 900px;
+}
+.delivery a{
+    display: inline-block;
+}
+.delivery .delevery-img{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+.delevery-img img:nth-child(odd){
+    height: 500px;
+    width: 55%;
+    object-fit: cover;
+    margin-top: 70px;
+    border-radius: 10px 10px 0 0;
+}
+.delevery-img img:nth-child(even){
+    height: 650px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: -80px;
+    border-radius: 10px 10px 0 0;
+}
+ 
+/* ------------------------  */
+.insta-image-container{
+    margin-bottom: 20px;
+    animation: insta-left 75s linear infinite;
+}
+@keyframes insta-left {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.insta-image-container img{
+    width:350px ;
+    height:450px ;
+    object-fit: cover;
+    margin: 10px 20px;
+}
+.instagram .insta-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.insta-head a{
+    color: var(---p-text-color);
+    display: block;
+    font-size: var(--font-20);
+    font-weight: 400;
+    cursor: pointer;
+    opacity: 1;
+}
+.insta-head a{
+    opacity: 0.5;
+}
+/* ------------------------------------------------  */
+ footer{
+    background-color: var(--color-black);
+    height: 100vh;
+    max-width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+
+ }
+ .footer-head{
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 4% auto;
+ }
+ .footer-head p{
+    font-size: var(--font-16);
+    color: var(---body-color);
+    font-weight: 400;
+    opacity: 0.5;
+    margin-bottom: 30px;
+    
+ }
+ .footer-head .footer-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 80px;
+ }
+ .footer-nav a{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    color: var(---p-text-color);
+    text-transform: capitalize;
+    padding: 5px;
+
+ }
+ .footer-nav a:hover{
+    color: #fff;
+    opacity: 0.8;
+ }
+ .footer-nav a:first-child{
+    border-right: 1px solid rgba(199, 191, 191, 0.486);
+ }
+ .footer-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    max-width: 800px;
+    margin: 5% auto;
+    text-align: left;
+ }
+ .bottom{
+    border-bottom: 1px solid rgba(226, 211, 211, 0.253);
+   
+ }
+ .footer-card p{
+    width: 100%;
+    max-width: 130px;
+    text-align: left;
+    font-size: var(--font-16);
+    font-weight: 400;
+ }
+ .footer-card h3{
+    font-size: var(--font-h5);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 25px;
+    margin-right: -60px;
+ }
+ .copyright p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(---p-text-color);
+    margin-top: 15px;
+ }
