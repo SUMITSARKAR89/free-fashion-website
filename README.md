@@ -1,1 +1,1 @@
- <img src="ss.jpeg" alt="">
+<img src="./image/ss.jpeg" width="200" height="" alt="picture" width="800" >
