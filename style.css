@@ -61,7 +61,7 @@ body{
 }
 /* -------------------------------------------------  */
 header{
-    width: 100%;
+    max-width: 100%;
     height: 152vh;
     background-color:var(---body-color);
     text-align: center;
@@ -73,6 +73,27 @@ header .head{
     margin: 0 auto;
     height: auto;
 }
+
+/* 
+#navbar2{
+    display: none;
+    
+}
+#menu-btn{
+   display: none;
+    color: black;
+}
+ #menu-btn i{
+    font-size: 18px;
+    color: var(---btn-color);
+    background-color: #fff;
+    padding: 6px;
+    margin-top: 10px;
+    border-radius: 50%;
+    transition: 0.2s ease;
+    
+  } */
+
 .head .navbar{
     display: flex;
     justify-content: space-between;
@@ -182,6 +203,8 @@ header .image img{
     height: auto;
     padding: 0 12px;
     transition: 0.4s;
+    margin: 0 auto;
+    
    
 
 }
@@ -535,6 +558,11 @@ hr{
     gap: 35px;
     
 }
+.trademark-contentainer .trademark-left, 
+.trademark-contentainer .trademark-right{
+    width: 100%;
+}
+
 .trademark-contentainer .trademark-left h2{
     font-size: var(--font-h2);
     font-weight: 400;
@@ -565,7 +593,7 @@ hr{
     flex-direction: row;
     width: 100%;
     gap: 15px;
-    margin: 0 auto;
+    margin: 4% auto;
    
 }
 .logo-container img{
@@ -606,7 +634,7 @@ hr{
     font-weight: 400;
     color: var(---p-text-color);
     margin-bottom: 20px;
-    width: 900px;
+    max-width: 700px;
 }
 .delivery a{
     display: inline-block;
@@ -616,6 +644,9 @@ hr{
     flex-direction: row;
     gap: 30px;
 
+}
+.delevery-img img{
+    margin: 10px;
 }
 .delevery-img img:nth-child(odd){
     height: 500px;
