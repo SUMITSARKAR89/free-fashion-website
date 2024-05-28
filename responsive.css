@@ -8,20 +8,18 @@
      section{
         padding: 2% ;
      }
-     header#header{
-        height:100vh;
-    }
-    section#offer{ 
-        height: 92vh;
+    section#offertag{ 
+        height: auto;
     }
     #delivery{
-        height: 125vh;
+        height: auto;
     }
     footer{
-        height: 80vh;
+        height: 50vh;
     }
 
 }
+
 @media(max-width:1280px){
     :root{
 
@@ -165,7 +163,7 @@
     
     }
 }
-@media(max-width:620px){
+@media(max-width:650px){
     header .head-image img:nth-child(even){
         height: 100px;
         width: 100px; 
@@ -222,4 +220,17 @@
         
         /* more fontsize  */  
     }
+    .footer-card{
+       flex-direction: column;
+     }
+     .footer-card p{
+        width: 200px;
+       text-align: center;
+     }
+     .footer-card h3{
+        font-size: var(--font-h5);
+        width: 100%;
+       margin: 0 auto;
+
+     }
 }

@@ -765,7 +765,7 @@ section#delivery{
     justify-content: space-between;
     align-items: center;
     gap: 10%;
-    max-width: 800px;
+    max-width: 100%;
     margin: 5% auto;
     text-align: left;
  }
@@ -775,7 +775,7 @@ section#delivery{
  }
  .footer-card p{
     width: 100%;
-    max-width: 130px;
+    width: 130px;
     text-align: left;
     font-size: var(--font-16);
     font-weight: 400;
@@ -783,7 +783,7 @@ section#delivery{
  .footer-card h3{
     font-size: var(--font-h5);
     width: 100%;
-    max-width: 600px;
+   margin: 0 auto;
     margin-bottom: 25px;
     margin-right: -60px;
  }
