@@ -8,11 +8,11 @@
      section{
         padding: 2% ;
      }
-     header{
-        height: 120vh;
+     header#header{
+        height:100vh;
     }
-    #offer{ 
-        height: 96vh;
+    section#offer{ 
+        height: 92vh;
     }
     #delivery{
         height: 125vh;
@@ -75,11 +75,11 @@
         display: block;
         
     }
-    header .image img:nth-child(even){
+    header .head-image img:nth-child(even){
         height: 250px; 
         
     }
-    header .image img:nth-child(odd){
+    header .head-image img:nth-child(odd){
         height: 250px;
         object-fit: cover;
     
@@ -90,10 +90,10 @@
     padding: 10px 18px;
     
     }
-    header{
+    header#header{
         height: 80vh;
     }
-    #offer{ 
+    section#offer{ 
         height: 83vh;
     }
     #delivery{
@@ -155,23 +155,23 @@
      section{
         padding: 2% 0 ;
      }
-     header .image img:nth-child(even){
+     header .head-image img:nth-child(even){
         height: 180px; 
         
     }
-    header .image img:nth-child(odd){
+    header .head-image img:nth-child(odd){
         height: 180px;
         object-fit: cover;
     
     }
 }
 @media(max-width:620px){
-    header .image img:nth-child(even){
+    header .head-image img:nth-child(even){
         height: 100px;
         width: 100px; 
         
     }
-    header .image img:nth-child(odd){
+    header .head-image img:nth-child(odd){
         height: 100px;
         width: 100px;
         object-fit: cover;

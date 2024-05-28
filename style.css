@@ -60,12 +60,13 @@ body{
     height: 100%;
 }
 /* -------------------------------------------------  */
-header{
-    max-width: 100%;
-    height: 152vh;
+header#header-main{
     background-color:var(---body-color);
+    height: 135vh;
+    margin:  0 auto;
     text-align: center;
-    align-items: center;
+  
+   
 }
 header .head{
    
@@ -195,33 +196,39 @@ header .btn:hover,
     color: #fff;
     transform: rotate(360deg);
 }
-header .image{
-    margin: 30px 0 5px;
-}
-header .image img{
-    width:250px;
-    height: auto;
-    padding: 0 12px;
-    transition: 0.4s;
-    margin: 0 auto;
-    
-   
 
-}
-header .image img:hover{
+header .head-image img:hover{
     transform: scale(1.02);
     
 
 }
-header .image img:nth-child(even){
-    height: 380px; 
+header .head-image{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+}
+header .head-image img{
+    width: 220px;
+    height: auto;
+    object-fit: cover;
+}
+header .head-image img:nth-child(even){
+    height: 300px;
+    max-width: 100%;
+    object-fit: cover;
+    
+ 
     
 }
-header .image img:nth-child(odd){
-    height: 280px;
+header .head-image img:nth-child(odd){
+    height: 250px;
+    max-width: 100%; 
     object-fit: cover;
-
+    
+    
 }
+
 /* -----------------------------------  */
 
 .hero, 
@@ -379,12 +386,11 @@ hr{
 
 }
 /* ------------------------------------------------  */
-#offer{
-    background-color:var(--color-black);
-    max-width: 100%;
-    height: 125vh;
+section#offeritem{
+    background-color: var(--color-black);
     margin: 0 auto;
-    color: #fff;
+    width: 100%;
+    height: 130vh;
 }
 .offer .offer-details{
     display: flex;
@@ -611,10 +617,10 @@ hr{
     box-shadow: rgba(100, 100, 111, 0.24) 0px 7px 29px 0px;
 }
 /* ---------------------------------------------------  */
-#delivery{
+section#delivery{
     background-color:var(---body-color);
     max-width: 100%;
-    height: 157vh;
+    height: 165vh;
     margin: 0 auto;
    
 }
@@ -700,7 +706,7 @@ hr{
     opacity: 0.5;
 }
 /* ------------------------------------------------  */
- footer{
+ footer#foot{
     background-color: var(--color-black);
     height: 100vh;
     max-width: 100%;
